@@ -1,0 +1,156 @@
+.dashboard-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+/* ================= HEADER ================= */
+.dashboard-header {
+  margin-bottom: 2.5rem;
+}
+
+.dashboard-header h1 {
+  color: #faf9f8;
+}
+
+.dashboard-header p {
+  color: #bdbdbd;
+}
+
+/* ================= CARDS ================= */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.asset-card {
+  background: #151515;
+  padding: 1.6rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  border-left: 5px solid #ff7a00;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.asset-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8);
+}
+
+.asset-card h3 {
+  color: #ffffff;
+}
+
+/* ================= PREÇO ================= */
+.price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0.6rem 0;
+  color: #ffffff;
+}
+
+/* ================= STATUS ================= */
+.status {
+  font-weight: bold;
+}
+
+.status.up {
+  color: #38d39f;
+}
+
+.status.down {
+  color: #ff4d4d;
+}
+
+/* ================= LINK ================= */
+.details-link {
+  display: block;
+  margin-top: 1.2rem;
+  color: #ff7a00;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.details-link:hover {
+  text-decoration: underline;
+}
+
+/* ================= AÇÕES ================= */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+/* ================= INPUT ================= */
+.search-input {
+  padding: 10px 14px;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #0b0b0b;
+  color: #ffffff;
+  width: 200px;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ff7a00;
+}
+
+/* ================= BOTÕES ================= */
+.btn-primary,
+.btn-secondary,
+.btn-portfolio {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Botão principal */
+.btn-primary {
+  background-color: #ff7a00;
+  color: #000;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Botão secundário */
+.btn-secondary {
+  background-color: transparent;
+  color: #ff7a00;
+  border: 2px solid #ff7a00;
+}
+
+.btn-secondary:hover {
+  background-color: #ff7a00;
+  color: #000;
+}
+
+/* Botão portfólio */
+.btn-portfolio {
+  background-color: #0b0b0b;
+  color: #ff7a00;
+  border: 2px solid #ff7a00;
+}
+
+.btn-portfolio:hover {
+  background-color: #ff7a00;
+  color: #000;
+}

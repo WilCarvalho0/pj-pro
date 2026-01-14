@@ -1,0 +1,113 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= CONTAINER ================= */
+.dividends-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  color: #ffffff;
+}
+
+/* ================= TÍTULOS ================= */
+.dividends-container h1 {
+  color: #070707;
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.dividends-container p {
+  color: #bdbdbd;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
+}
+
+/* ================= TABELA ================= */
+.table-wrapper {
+  background-color: #151515;
+  border-radius: 14px;
+  overflow-x: auto;
+  box-shadow: 0 15px 40px rgb(0, 0, 0);
+}
+
+.dividends-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+/* ================= CABEÇALHO ================= */
+.dividends-table thead {
+  background-color: #0b0b0b;
+}
+
+.dividends-table th {
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ff7a00;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+/* ================= LINHAS ================= */
+.dividends-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.dividends-table tbody tr:hover {
+  background-color: #1c1c1c;
+}
+
+.dividends-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #2a2a2a;
+  font-size: 0.95rem;
+  color: #e5e5e5;
+}
+
+/* ================= DESTAQUES ================= */
+.dividends-table td strong {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.dividends-table td.value {
+  font-weight: bold;
+  color: #38d39f;
+}
+
+/* ================= BOTÃO ================= */
+.btn-notify {
+  background-color: transparent;
+  border: 2px solid #ff7a00;
+  color: #ff7a00;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-notify:hover {
+  background-color: #ff7a00;
+  color: #000;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+  .dividends-container h1 {
+    font-size: 1.9rem;
+  }
+
+  .dividends-table {
+    font-size: 0.85rem;
+  }
+}

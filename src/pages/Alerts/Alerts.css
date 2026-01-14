@@ -1,0 +1,106 @@
+/* ================= CONTAINER ================= */
+.alerts-container {
+  padding: 2.5rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #0b0b0b;
+  color: #ffffff;
+}
+
+/* ================= CARD FORM ================= */
+.alert-form-card {
+  background-color: #151515;
+  padding: 2.2rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  margin-bottom: 2.5rem;
+  border: 1px solid #2a2a2a;
+}
+
+/* ================= FORM ================= */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.input-field,
+.select-field {
+  padding: 0.85rem 1rem;
+  background-color: #0f0f0f;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  flex: 1;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.input-field::placeholder {
+  color: #8a8a8a;
+}
+
+.input-field:focus,
+.select-field:focus {
+  outline: none;
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 2px rgba(255, 122, 0, 0.15);
+}
+
+/* ================= BOTÃO SALVAR ================= */
+.btn-save {
+  background-color: #ff7a00;
+  color: #000000;
+  border: none;
+  padding: 0.85rem 1.8rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-save:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* ================= ALERT ITEM ================= */
+.alert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f0f0f;
+  padding: 1.1rem 1.4rem;
+  border-radius: 12px;
+  margin-top: 0.8rem;
+  border: 1px solid #2a2a2a;
+}
+
+/* ================= BOTÃO DELETE ================= */
+.btn-delete {
+  background: transparent;
+  color: #ff4d4f;
+  border: 1px solid #ff4d4f;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-delete:hover {
+  background-color: #ff4d4f;
+  color: #000000;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .btn-save {
+    width: 100%;
+  }
+}

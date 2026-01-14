@@ -1,0 +1,96 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #0b0b0b;
+}
+
+/* ================= INTRO ================= */
+.about-intro h1 {
+    color: #ff7a00;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-intro p {
+    color: #cfcfcf;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+/* ================= TÍTULO EQUIPE ================= */
+.team-section h2 {
+    color: #ffffff;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.team-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ff7a00;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* ================= GRID ================= */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+/* ================= CARD ================= */
+.team-card {
+    background: #141414;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 360px;
+    width: 100%;
+    border: 1px solid #2a2a2a;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.8);
+}
+
+/* ================= FOTO ================= */
+.team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 4px solid #ff7a00;
+    box-shadow: 0 0 20px rgba(255, 122, 0, 0.35);
+}
+
+/* ================= TEXTO ================= */
+.team-card h3 {
+    font-size: 1.35rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    color: #ff7a00;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    letter-spacing: 0.3px;
+}
+
+/* ================= PROJETO ================= */
+.project-info {
+    border-top: 1px solid #2a2a2a;
+    padding-top: 2rem;
+    color: #9b9b9b;
+    font-size: 0.85rem;
+}
