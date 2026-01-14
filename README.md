@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# Finanças Pro - Plataforma de Gestão Financeira
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Finanças Pro](./logo.png) <!-- Se tiver logo, coloque aqui -->
 
-Currently, two official plugins are available:
+## 🏦 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Finanças Pro** é uma plataforma de análise financeira e gestão de portfólio, desenvolvida para facilitar decisões estratégicas no mercado de capitais.  
+O projeto combina **dados, inteligência artificial e design intuitivo**, permitindo que usuários acompanhem investimentos, dividendos, análises de ativos e alertas personalizados.
 
-## React Compiler
+Este projeto foi realizado como **projeto final do curso Softex Recife**, com foco em **sprints de desenvolvimento**, entregando um produto completo e funcional.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📅 Detalhes do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Data de conclusão:** 14/01/2026  
+- **Autores:**  
+  - William Vinicius Gomes de Carvalho  
+  - Edjane Maria Barros de Sá  
+- **Curso:** Softex Recife - Projeto Integrador Final  
+- **Objetivo:** Desenvolver uma plataforma de finanças completa com funcionalidades de portfólio, dashboard e análises de mercado.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚡ Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Dashboard Financeiro**  
+   - Visualização de ativos em destaque
+   - Acesso rápido a informações e tendências do mercado
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Gestão de Portfólio**  
+   - Adição de ativos com quantidade e preço
+   - Cálculo automático de desempenho e rentabilidade
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. **Análises de Mercado**  
+   - Recomendações de compra e venda de ações
+   - Dividend Yield e risco de cada ativo
+   - Integração de alertas para novos eventos de mercado
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. **Agenda de Dividendos**  
+   - Filtragem e acompanhamento de pagamentos futuros
+   - Tipos de proventos (dividendos, JCP, rendimentos de FII)
+
+5. **Equipe e Informações do Projeto**  
+   - Perfis de desenvolvedores
+   - Informações sobre o projeto e objetivos
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- **Frontend:** React.js, TypeScript  
+- **Estilização:** CSS moderno, Tailwind (opcional)  
+- **Roteamento:** React Router DOM  
+- **Controle de versão:** Git e GitHub  
+- **Ferramentas:** VS Code, Node.js
+
+---
+
+## 🎨 Cores e Estilo do Projeto
+
+- **Primária:** Laranja (`#ff7a00`)  
+- **Secundária:** Preto (`#0b0b0b`)  
+- **Complementares:** Tons de cinza e verde para destaques e métricas  
+
+O design foi planejado para ser **profissional, intuitivo e responsivo**, proporcionando uma ótima experiência para usuários de desktop e mobile.
+
+---
+
+## 🚀 Como Executar
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/WilCarvalho0/pj-pro.git
+
